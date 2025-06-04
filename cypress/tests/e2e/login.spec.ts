@@ -16,13 +16,25 @@ describe('Login com sucesso', () => {
   });
 });
 
-/*describe('Tentar fazer login com credenciais inválidas', () => {
+describe('Tentar fazer login com credenciais inválidas', () => {
   it('Deve exibir uma mensagem de erro ao fazer login com credenciais inválidas', () => {
-    // Implemente os passos do caso de teste aqui
+    cy.visit('/signin');
+
+    // Preenche campos com valores inválidos
+    cy.get('[data-test="signin-username"]').type('usuario.invalido');
+    cy.get('[data-test="signin-password"]').type('senhaErrada');
+
+    // Clica no botão de login
+    cy.get('[data-test="signin-submit"]').click();
+
+    // Valida se a mensagem de erro aparece e contém o texto correto
+    cy.get('[data-test="signin-error"]')
+      .should('be.visible')
+      .and('have.text', 'Username or password is invalid');
   });
 });
 
-describe('Registro de novo usuário com sucesso', () => {
+/*describe('Registro de novo usuário com sucesso', () => {
   it('Deve registrar um novo usuário com informações válidas', () => {
     // Implemente os passos do caso de teste aqui
   });
