@@ -57,8 +57,24 @@ describe('Registro de novo usuário com sucesso', () => {
   });
 });
 
-/*describe('Tentar registrar um novo usuário com informações incompletas', () => {
+describe('Tentar registrar um novo usuário com informações incompletas', () => {
   it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
-    // Implemente os passos do caso de teste aqui
+     cy.visit('/signup');
+
+    // Preenche apenas alguns campos obrigatórios
+    cy.get('[data-test="signup-first-name"]').type('Test');
+    // Não preenche o campo sobrenome
+    cy.get('[data-test="signup-username"]').type(`user${Date.now()}`);
+    cy.get('[data-test="signup-password"]').type('s3cret');
+    cy.get('[data-test="signup-confirmPassword"]').type('s3cret');
+
+    // Foca e desfoca o input do sobrenome para disparar a validação
+    cy.get('input[name="lastName"]').focus().blur();
+
+    // Valida que a mensagem de erro para o campo obrigatório aparece
+    cy.contains('Last Name is required').should('be.visible');
+
+    // Valida que o botão de cadastro está desabilitado
+    cy.get('[data-test="signup-submit"]').should('be.disabled');
   });
-});*/
+});
