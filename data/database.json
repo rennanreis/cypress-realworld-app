@@ -11,7 +11,7 @@
       "phoneNumber": "773-250-0200",
       "avatar": "https://avatars.dicebear.com/api/human/rM8kWVsB7.svg",
       "defaultPrivacyLevel": "contacts",
-      "balance": 110366,
+      "balance": 109366,
       "createdAt": "2024-07-10T12:24:43.882Z",
       "modifiedAt": "2025-06-02T20:11:54.560Z"
     },
@@ -56,7 +56,7 @@
       "phoneNumber": "700-906-8907",
       "avatar": "https://avatars.dicebear.com/api/human/goqLzfwJ_g.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 46625,
+      "balance": 47625,
       "createdAt": "2024-10-16T12:16:44.915Z",
       "modifiedAt": "2025-06-03T11:13:09.935Z"
     },
@@ -129,6 +129,17 @@
       "balance": 0,
       "createdAt": "2025-06-04T09:40:47.624Z",
       "modifiedAt": "2025-06-04T09:40:47.624Z"
+    },
+    {
+      "id": "jtIAIQiwN",
+      "uuid": "feb742b2-6553-437f-bacf-8a05d4c706a0",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "user_1749032259839",
+      "password": "$2a$10$8V6nAFVvxLFyYQ2wUzpyX.hJ.OgJSTM.hAHQmFiAzJy4LrrVKmsqS",
+      "balance": 0,
+      "createdAt": "2025-06-04T10:17:43.865Z",
+      "modifiedAt": "2025-06-04T10:17:43.865Z"
     }
   ],
   "contacts": [
@@ -9910,6 +9921,18 @@
       "requestResolvedAt": "",
       "createdAt": "2024-09-29T23:28:27.693Z",
       "modifiedAt": "2025-06-02T20:40:39.302Z"
+    },
+    {
+      "id": "wGiX1cThj",
+      "uuid": "11e802ed-bf8d-44e8-a3fc-bbbbebb31575",
+      "amount": 1000,
+      "description": "Teste cypress",
+      "receiverId": "goqLzfwJ_g",
+      "senderId": "rM8kWVsB7",
+      "privacyLevel": "contacts",
+      "status": "complete",
+      "createdAt": "2025-06-04T10:33:18.025Z",
+      "modifiedAt": "2025-06-04T10:33:18.025Z"
     }
   ],
   "likes": [
@@ -10486,6 +10509,16 @@
       "isRead": false,
       "createdAt": "2025-04-18T11:08:24.188Z",
       "modifiedAt": "2025-06-02T21:48:18.430Z"
+    },
+    {
+      "id": "Y54jcXyyc-",
+      "uuid": "b3041e09-fdc3-4649-ae36-57ae433f94d4",
+      "userId": "goqLzfwJ_g",
+      "transactionId": "wGiX1cThj",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2025-06-04T10:33:18.049Z",
+      "modifiedAt": "2025-06-04T10:33:18.049Z"
     }
   ],
   "banktransfers": [
