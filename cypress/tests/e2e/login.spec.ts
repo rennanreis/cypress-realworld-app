@@ -34,13 +34,30 @@ describe('Tentar fazer login com credenciais inválidas', () => {
   });
 });
 
-/*describe('Registro de novo usuário com sucesso', () => {
+describe('Registro de novo usuário com sucesso', () => {
   it('Deve registrar um novo usuário com informações válidas', () => {
-    // Implemente os passos do caso de teste aqui
+    const username = `testuser${Date.now()}`; // Username único para evitar conflito
+
+    cy.visit('/signup');
+
+    // Preenche os campos obrigatórios
+    cy.get('[data-test="signup-first-name"]').type('Test');
+    cy.get('[data-test="signup-last-name"]').type('User');
+    cy.get('[data-test="signup-username"]').type(username);
+    cy.get('[data-test="signup-password"]').type('s3cret');
+    cy.get('[data-test="signup-confirmPassword"]').type('s3cret');
+
+    // Clica no botão de registrar
+    cy.get('[data-test="signup-submit"]').click();
+
+    // Valida se foi redirecionado para a tela de login
+    cy.url({ timeout: 10000 }).should('include', '/signin');
+    cy.get('[data-test="signin-username"]').should('be.visible');
+    cy.contains('Sign in').should('be.visible');
   });
 });
 
-describe('Tentar registrar um novo usuário com informações incompletas', () => {
+/*describe('Tentar registrar um novo usuário com informações incompletas', () => {
   it('Deve exibir mensagens de erro ao tentar registrar um novo usuário sem preencher todas as informações obrigatórias', () => {
     // Implemente os passos do caso de teste aqui
   });

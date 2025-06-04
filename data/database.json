@@ -74,6 +74,61 @@
       "balance": 60295,
       "createdAt": "2024-11-26T19:39:19.792Z",
       "modifiedAt": "2025-06-02T21:18:48.126Z"
+    },
+    {
+      "id": "avQkVeXhA",
+      "uuid": "aca04934-721e-4671-a097-c72ee343927d",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "testuser1749029315580",
+      "password": "$2a$10$wXi3RzpsadspH/Lm9184e.Q0gaG2WJ8hByl4VDvofisf.TWiQbG7u",
+      "balance": 0,
+      "createdAt": "2025-06-04T09:28:39.605Z",
+      "modifiedAt": "2025-06-04T09:28:39.605Z"
+    },
+    {
+      "id": "8lokFK7DG",
+      "uuid": "747a63a5-37c0-48ef-8f53-91a57babf5a1",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "testuser1749029355456",
+      "password": "$2a$10$BaVGCbzQnh/qPzsiTqmbP.t6ndrrVPsLpRldws.YzFK2S8tj/pvUO",
+      "balance": 0,
+      "createdAt": "2025-06-04T09:29:18.448Z",
+      "modifiedAt": "2025-06-04T09:29:18.448Z"
+    },
+    {
+      "id": "9ctA2JEGp",
+      "uuid": "a5906645-e272-4e7a-9999-6d27b309cd3a",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "testuser1749029747884",
+      "password": "$2a$10$.Cr/FCFNtm9bY34q6bnXl..QsKff2SsCEHzFQ.xSJ6p1rLqXHzbBy",
+      "balance": 0,
+      "createdAt": "2025-06-04T09:35:51.261Z",
+      "modifiedAt": "2025-06-04T09:35:51.261Z"
+    },
+    {
+      "id": "Mv8rVMfx-",
+      "uuid": "84fe6c46-f7da-4175-bef1-872d442e70ff",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "testuser1749029885001",
+      "password": "$2a$10$c4clN8SvEFe.RSG2sFnAqeT.bEaCMXt2Y9aFFRSEgZESj3B3yW4C.",
+      "balance": 0,
+      "createdAt": "2025-06-04T09:38:09.001Z",
+      "modifiedAt": "2025-06-04T09:38:09.001Z"
+    },
+    {
+      "id": "10tm1db2H",
+      "uuid": "96308008-6557-420b-bf29-472a8b95a027",
+      "firstName": "Test",
+      "lastName": "User",
+      "username": "testuser1749030044562",
+      "password": "$2a$10$GnhLrFpD3DVxC2FcDfXMWu4EKKQxjWmlirHaQDM7SmGtxCAUwGD3S",
+      "balance": 0,
+      "createdAt": "2025-06-04T09:40:47.624Z",
+      "modifiedAt": "2025-06-04T09:40:47.624Z"
     }
   ],
   "contacts": [
