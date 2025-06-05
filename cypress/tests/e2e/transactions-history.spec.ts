@@ -11,5 +11,13 @@ describe('Visualizar histórico de transações com sucesso', () => {
 
 describe('Visualizar histórico de transações sem transações anteriores', () => {
   it('Deve exibir mensagem de ausência de transações', () => {
+    cy.visit('/signin');
+    cy.get('[data-test="signin-username"]').type('empty.user');
+    cy.get('[data-test="signin-password"]').type('s3cret');
+    cy.get('[data-test="signin-submit"]').click();
+
+    cy.get('[data-test="nav-personal-tab"]').click();
+
+    cy.contains('No Transactions').should('be.visible');
   });
 });
